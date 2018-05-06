@@ -1,0 +1,80 @@
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conatiner{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.tabCon{
+  height: 47px;
+  width:100%;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.itemCon{
+  display: -webkit-box;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 47px;
+}
+
+.item{
+  @extend .flex_center;
+  height: 100%;
+  font-size: 15px;
+  color: #666;
+  padding:0 20px;
+  text-align: center;
+}
+
+.activeItem{
+  @extend .item;
+  color: #333;
+}
+
+.default_item{
+  @extend .flex_center;
+  height: 100%;
+  font-size: 15px;
+  color: #666;
+  padding:0 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.default_activeItem{
+  @extend .default_item;
+  color: #333;
+}
+
+.underline{
+  width:50px;
+  height:3px;
+  background-color: #333;
+  position: absolute;
+  bottom:6px;
+  left:0;
+  transform: translate3d(0, 0, 0);
+}
+
+.listitemCon{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listviewCls{
+  background-color: #eee;
+  bottom:94px;
+}
+
+.staticComponent{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
