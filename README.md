@@ -55,3 +55,87 @@ export default class Demo extends PureComponent {
 | renderTabBar | any      |   DefaultTabBar |   自定义tabbar |
 | handleTab | func      |   无 |   页面切换回调 |
 
+
+# 内置组件(Carousel, ScrollView)
+
+1.Carousel
+
+```js
+import {Carousel} from 'components/ScrollableTabBarView/ScrollableTabBarView';
+const windows = {
+	width: window.innerWidth,
+	height: window.innerHeight
+};
+export default class DemoC extends PureComponent {
+
+    render() {
+        return (
+            <Carousel className={styles.hcarousel}>
+                <div className={styles.carouselItem} style={{width: windows.width, backgroundColor: '#000'}}/>
+                <div className={styles.carouselItem} style={{width: windows.width, backgroundColor: 'red'}}/>
+                <div className={styles.carouselItem} style={{width: windows.width, backgroundColor: 'yellow'}}/>
+            </Carousel>
+        )
+    }
+}
+```
+![](https://github.com/1035901787/react-s-scrollable-tab-view/blob/master/source/20180506155736.gif)
+
+# 属性
+
+|属性         | 值类型          | 默认值  | 描述  |
+| ------------- |:-------------:| -----:| -----:|
+| initItem     | number | 0 | 初始化显示页面的下标 |
+| loop      | bool      |   true |   是否循环滚动 |
+| auto | bool      |   true |   是否自动滚动 |
+| autoplayTime | number      |   3000 |   自动滚动间隔 |
+| indicator | bool      |   true |   是否显示指示器 |
+| indicatorStyle | object      |   默认样式 |   指示器样式 |
+| indicatorDef | any      |   默认 |   自定义指示器布局 |
+| indicatorActive | any      |   默认 |   自定义选中指示器布局 |
+| bounce | bool      |   false |   切换页面是否具有回弹效果 |
+| pageScrollEnd | func      |   无 |   页面切换完成回调 |
+| itemCls | string      |   无 |   item class |
+| itemStyle | object      |   无 |   item 样式 |
+
+
+2.ScrollView
+
+```js
+import {ScrollView} from 'components/ScrollableTabBarView/ScrollableTabBarView';
+const windows = {
+	width: window.innerWidth,
+	height: window.innerHeight
+};
+export default class DemoS extends PureComponent {
+
+    render() {
+        return (
+            <ScrollView>
+                <div className={styles.carouselItem} style={{backgroundColor: '#000'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'red'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'yellow'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: '#000'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'red'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'yellow'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: '#000'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'red'}}/>
+                <div className={styles.carouselItem} style={{backgroundColor: 'yellow'}}/>
+            </ScrollView>
+        )
+    }
+}
+```
+![](https://github.com/1035901787/react-s-scrollable-tab-view/blob/master/source/20180506160716.gif)
+
+# 属性
+
+|属性         | 值类型          | 默认值  | 描述  |
+| ------------- |:-------------:| -----:| -----:|
+| startY     | number | 0 | 纵向初始化位置 |
+| startX      | number      |   0 |   横向初始化位置 |
+| horizontal | bool      |   false |   是否横向显示布局，默认纵向显示 |
+| bounce | bool      |   false |   滑动至顶/底部是否具有回弹效果 |
+| onScroll | func      |   无 |   滑动回调 |
+| onScrollEnd | func      |   无 |   滑动结束回调 |
+
