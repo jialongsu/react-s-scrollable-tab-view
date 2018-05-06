@@ -1,7 +1,7 @@
 {
-  "name": "react-s-listview",
+  "name": "rreact-s-scrollable-tab-view",
   "version": "1.0.8",
-  "description": "listview",
+  "description": "react-s-scrollable-tab-view",
   "main": "index.js",
   "files": [
     "lib"
