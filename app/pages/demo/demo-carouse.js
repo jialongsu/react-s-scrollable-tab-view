@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import styles from './styles.scss';
-import Carousel from 'components/Carousel/Carousel';
+import {Carousel} from 'react-s-scrollable-tab-view';
+
 const windows = {
 	width: window.innerWidth,
 	height: window.innerHeight

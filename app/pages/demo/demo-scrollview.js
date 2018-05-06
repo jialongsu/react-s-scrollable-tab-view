@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import styles from './styles.scss';
-import ScrollView from 'components/ScrollView/ScrollView';
+import {ScrollView} from 'react-s-scrollable-tab-view';
 const windows = {
 	width: window.innerWidth,
 	height: window.innerHeight

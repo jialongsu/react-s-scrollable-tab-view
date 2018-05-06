@@ -1,6 +1,6 @@
 {
-  "name": "react-s-scrollable-tab-view-demo",
-  "version": "1.0.1",
+  "name": "react-s-scrollable-tab-view",
+  "version": "1.0.2",
   "description": "react-s-scrollable-tab-view",
   "main": "index.js",
   "files": [
