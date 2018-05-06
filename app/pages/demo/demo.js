@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import styles from './styles.scss';
-import ScrollableTabBarView, {ScrollableTabBar} from 'components/ScrollableTabBarView/ScrollableTabBarView';
+import ScrollableTabBarView, {ScrollableTabBar} from 'react-s-scrollable-tab-view';
 
 export default class Demo extends PureComponent {
 

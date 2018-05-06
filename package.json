@@ -1,6 +1,6 @@
 {
-  "name": "rreact-s-scrollable-tab-view",
-  "version": "1.0.8",
+  "name": "react-s-scrollable-tab-view-demo",
+  "version": "1.0.1",
   "description": "react-s-scrollable-tab-view",
   "main": "index.js",
   "files": [
@@ -9,18 +9,19 @@
   "scripts": {
     "start": "rimraf dist && webpack-dev-server --devtool eval --progress --colors --watch --config ./webpack.dev.js",
     "clean": "rimraf dist lib && mkdir lib",
-    "lib": "npm run clean && babel app/components --out-dir lib --copy-files"
+    "lib": "npm run clean && babel app/components --out-dir lib --copy-files",
+    "buildIndex": "babel index_.js --out-file index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1035901787/react-s-listview.git"
+    "url": "https://github.com/1035901787/react-s-scrollable-tab-view.git"
   },
   "author": "arno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/1035901787/react-s-listview/issues"
+    "url": "https://github.com/1035901787/react-s-scrollable-tab-view/issues"
   },
-  "homepage": "https://github.com/1035901787/react-s-listview#readme",
+  "homepage": "https://github.com/1035901787/react-s-scrollable-tab-view#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "babel-cli": "^6.26.0",
@@ -48,10 +49,6 @@
     "file-loader": "^0.11.2",
     "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.28.0",
-    "immutable": "^3.8.1",
-    "iscroll": "^5.2.0",
-    "mobx": "^3.1.16",
-    "mobx-react": "^4.2.1",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.5",
     "prop-types": "^15.5.10",
@@ -71,6 +68,6 @@
     "webpack-spritesmith": "^0.3.3"
   },
   "dependencies": {
-    "react-s-listview": "^1.0.4"
+    "react-s-scrollable-tab-view": "^1.0.1"
   }
 }

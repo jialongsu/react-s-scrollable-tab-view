@@ -9,7 +9,7 @@ const windows = {
 	height: window.innerHeight
 };
 
-export default class ScrollableTabBarView extends PureComponent {
+class ScrollableTabBarView extends PureComponent {
 
     static propTypes = {
         initItemIndex: PropTypes.number,
@@ -148,6 +148,7 @@ class StaticComponent extends PureComponent{
     }
 }
 
+export default ScrollableTabBarView;
 export {
     ScrollableTabBar,
     DefaultTabBar
