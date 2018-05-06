@@ -2,7 +2,7 @@
 
 这是一个基于JavaScript原生实现的react组件，实现了滚动tabbar，滑动切换页面
 
-![这里写图片描述](https://github.com/1035901787/react-s-listview/blob/master/source/20180506112030.gif)
+![](https://github.com/1035901787/react-s-scrollable-tab-view/blob/master/source/20180506152400.gif)
 
 # 安装
 
